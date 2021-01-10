@@ -20,4 +20,3 @@
   aevt_decompile writes its output to `~/Desktop/<file>.out`.
   aevt_decompile is non-destructive (i.e., it does not modify the input file).
   
-Read the blog post: https://labs.sentinelone.com/fade-dead-adventures-in-reversing-malicious-run-only-applescripts
