@@ -6,8 +6,7 @@
 //  SentinelOne, SentinelLabs
 //  https://labs.sentinelone.com
 //
-//  TODO: update license path
-//  Licensing same as https://github.com/Sentinel-One/VTgrepGHIDRA/blob/master/License.md
+
 //
 // This is a work-in-progress command line tool that will help parse the output
 // of applescript-disassembler.py into something more human-readable.
@@ -515,7 +514,7 @@ NSString * human_readable_code(NSString * searchStr) {
         
         NSError  * err;
         NSString * aevtName = [aevt lastPathComponent];
-        NSURL *aevtURL = [NSURL fileURLWithPath:aevt];
+        NSURL * aevtURL = [NSURL fileURLWithPath:aevt];
         NSString * fileContents = [NSString stringWithContentsOfURL:aevtURL encoding:NSUTF8StringEncoding error:&err];
         
         if (fileContents != nil) {
