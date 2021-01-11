@@ -56,10 +56,10 @@ int main(int argc, const char * argv[]) {
                 NSMutableString * output = [NSMutableString string];
                 
                 NSString * CNSTNT = @"constant value=0x";
-                NSString * FIXNUM = @"fixnum value=0x"    ;
+                NSString * FIXNUM = @"fixnum value=0x";
                 NSString * DESCRP = @"Descriptor type=";
                 NSString * HEXTXT = @"type=special value=nil>, <Value type=string value=";
-                NSString * EVNTID = @"event_identifier"     ;
+                NSString * EVNTID = @"event_identifier";
                 NSString * POMGSD = @"PositionalMessageSend";
                 NSString * ENDTLL = @"EndTell";
                 NSString * ENERHN = @"EndErrorHandler";
