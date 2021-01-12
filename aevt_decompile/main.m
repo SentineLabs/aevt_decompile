@@ -281,7 +281,7 @@ int main(int argc, const char * argv[]) {
                         }
                         
                     } else if ([thisLine containsString:PUSHME]) {
-                        [output appendFormat:@"\n%@ ; 'AppleScript: \"path to me\" '\n", thisLine];
+                        [output appendFormat:@"\n%@ ; Reference to Self (the execution parent)\n", thisLine];
 
                     } else if ([thisLine containsString:ENDTLL]) {
                         //TODO: ENDTLL
