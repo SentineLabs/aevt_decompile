@@ -61,6 +61,7 @@ int main(int argc, const char * argv[]) {
                 NSString * HEXTXT = @"type=special value=nil>, <Value type=string value=";
                 NSString * EVNTID = @"event_identifier";
                 NSString * POMGSD = @"PositionalMessageSend";
+                NSString * PUSHME = @"PushMe";
                 NSString * ENDTLL = @"EndTell";
                 NSString * ENERHN = @"EndErrorHandler";
                 NSString * ERRHND = @"ErrorHandler";
@@ -278,6 +279,10 @@ int main(int argc, const char * argv[]) {
                         } else {
                             [output appendFormat:@"\n%@\n\t;  Function Call\n", thisLine];
                         }
+                        
+                    } else if ([thisLine containsString:PUSHME]) {
+                        [output appendFormat:@"\n%@ ; 'AppleScript: \"path to me\" '\n", thisLine];
+
                     } else if ([thisLine containsString:ENDTLL]) {
                         //TODO: ENDTLL
                         [output appendFormat:@"\n%@\n", thisLine];
